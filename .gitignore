@@ -1,28 +1,43 @@
-# General
+## Combined Go project .gitignore
+
+# General OS clutter
 .DS_Store
 Thumbs.db
 
-# Go build outputs
+# Reference: GitHub Go .gitignore template + custom entries
+# Binaries for programs and plugins
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-*.test
-*.out
+*.test          # go test -c output
+*.out           # go test -coverprofile / misc outputs
+coverage.*
+*.coverprofile
+profile.cov
+*.cov
 
-# IDE/editor
+# Go workspaces
+go.work
+go.work.sum
+
+# Optional vendored dependencies (uncomment to ignore vendor dir)
+# vendor/
+
+# Environment / secrets
+.env
+
+# Build output directories
+bin/
+
+# Project-specific compiled binary that slipped in earlier
+/HolaMundo/main
+
+# Editor / IDE files
 .vscode/
 .idea/
 *.swp
 
-# Coverage
-coverage/
-*.cov
-
-# Binaries in project dirs (avoid pushing compiled artifacts)
-# Prefer building to ./bin/ and ignoring that folder
-bin/
-
-# Project-specific compiled binary that slipped in
-/HolaMundo/main
+# Git
+.gitignore
