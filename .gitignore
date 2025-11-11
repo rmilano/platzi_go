@@ -1,0 +1,28 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Go build outputs
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# Coverage
+coverage/
+*.cov
+
+# Binaries in project dirs (avoid pushing compiled artifacts)
+# Prefer building to ./bin/ and ignoring that folder
+bin/
+
+# Project-specific compiled binary that slipped in
+/HolaMundo/main
