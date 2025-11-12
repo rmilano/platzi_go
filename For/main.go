@@ -27,11 +27,4 @@ func main() {
 
 	fmt.Println("--------------------")
 
-	for valor := range 6 {
-		fmt.Println(valor)
-		if valor%2 == 0 {
-			continue
-		}	
-		fmt.Println(valor)
-	}
 }
